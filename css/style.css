@@ -694,6 +694,16 @@ h2{
 
 .museum-gallery-box img {
   width: 100%;
+  /* 📷 ضمان أن الصور لا تتجاوز عرض العنصر الحاوي */
+#project1 img,
+.museum-gallery-box img,
+.museum-highlight img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
   border-radius: 8px;
   margin-bottom: 10px;
   transition: 0.3s ease;
@@ -728,7 +738,6 @@ footer {
   text-align: center;
   margin-top: 40px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin: -2% -5%;
 }
 
 .contact-container {
